@@ -82,6 +82,8 @@ HRESULT OverrideClassesRoot(HKEY hKeyBase, LPCWSTR szOverrideKey)
 	return GetHresultFromWin32(l);
 }
 
+#ifndef _WIN64
+
 #pragma pack(push)
 #pragma pack(1)
 
@@ -187,6 +189,15 @@ HRESULT RegisterExe(LPCWSTR szExe, bool bUnregister, bool bCurrentUser)
 	
 	return hr;
 }
+
+#else
+
+HRESULT RegisterExe(LPCWSTR, bool, bool)
+{
+    return E_NOTIMPL;
+}
+
+#endif // Win32/Win64
 
 HRESULT RegisterDll(LPCWSTR szDll, bool bUnregister, bool bCurrentUser)
 {
