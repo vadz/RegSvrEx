@@ -1,27 +1,27 @@
-Microsoft Visual Studio Solution File, Format Version 7.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegSvrEx", "RegSvrEx\RegSvrEx.vcproj", "{02041C66-1110-4299-85A4-C9BFBC3E9DC2}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegSvrEx", "RegSvrEx\RegSvrEx.vcxproj", "{02041C66-1110-4299-85A4-C9BFBC3E9DC2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegInDll", "RegInDll\RegInDll.vcproj", "{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegInDll", "RegInDll\RegInDll.vcxproj", "{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		ConfigName.0 = Debug
-		ConfigName.1 = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Debug|Win32.Build.0 = Debug|Win32
+		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Release|Win32.ActiveCfg = Release|Win32
+		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Release|Win32.Build.0 = Release|Win32
+		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Debug|Win32.Build.0 = Debug|Win32
+		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Release|Win32.ActiveCfg = Release|Win32
+		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Debug.ActiveCfg = Debug|Win32
-		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Debug.Build.0 = Debug|Win32
-		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Release.ActiveCfg = Release|Win32
-		{02041C66-1110-4299-85A4-C9BFBC3E9DC2}.Release.Build.0 = Release|Win32
-		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Debug.ActiveCfg = Debug|Win32
-		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Debug.Build.0 = Debug|Win32
-		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Release.ActiveCfg = Release|Win32
-		{CC07AC6D-29F0-4095-8A24-1FA864BF81F8}.Release.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
