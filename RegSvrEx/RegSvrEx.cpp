@@ -6,7 +6,17 @@
 
 #include "resource.h"
 
-#pragma intrinsic(memset)
+// In release builds compiler uses memset() to initialize some variables, but
+// this project doesn't link with the CRT, so we need to provide our own
+// memset() replacement.
+#pragma function(memset)
+extern "C" void* memset(void* dest, int c, size_t count)
+{
+	unsigned char* p = static_cast<unsigned char*>(dest);
+	while (count--)
+		*p++ = static_cast<unsigned char>(c);
+	return dest;
+}
 
 bool ShowUsage()
 {
